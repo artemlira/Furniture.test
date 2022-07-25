@@ -1,0 +1,26 @@
+// Цвета============================================================================
+$color3: #44C697;
+$color4: #1E2E36;
+$color2: #BCBDBB;
+$stock: #FF1B1B;
+
+
+//Переменные=========================================================================
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1820;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+
+// Шрифт по умолчанию================================================================
+$fontFamily: "font-family: proximanova_bold;";
+$root-font-size: 18px;
+
+
+
+@function rem($size) {
+   @return $size / $root-font-size * 1rem;
+}

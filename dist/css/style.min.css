@@ -1,0 +1,151 @@
+@font-face {
+  font-family: proximanova_black;
+  font-display: swap;
+  src: url("../fonts/proximanova_black.woff2") format("woff2"), url("../fonts/proximanova_black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: proximanova_blackit;
+  font-display: swap;
+  src: url("../fonts/proximanova_blackit.woff2") format("woff2"), url("../fonts/proximanova_blackit.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: proximanova_bold;
+  font-display: swap;
+  src: url("../fonts/proximanova_bold.woff2") format("woff2"), url("../fonts/proximanova_bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: proximanova_boldit;
+  font-display: swap;
+  src: url("../fonts/proximanova_boldit.woff2") format("woff2"), url("../fonts/proximanova_boldit.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: proximanova_extrabold;
+  font-display: swap;
+  src: url("../fonts/proximanova_extrabold.woff2") format("woff2"), url("../fonts/proximanova_extrabold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: proximanova_light;
+  font-display: swap;
+  src: url("../fonts/proximanova_light.woff2") format("woff2"), url("../fonts/proximanova_light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: proximanova_regular;
+  font-display: swap;
+  src: url("../fonts/proximanova_regular.woff2") format("woff2"), url("../fonts/proximanova_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-family: proximanova_bold;";
+  font-size: 18px;
+  color: #1E2E36;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1820px;
+  margin: 0 auto;
+}
+@media (max-width: 1832) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.contacts__icons svg {
+  margin: 0 15px;
+}
+
+.contacts__phone {
+  display: flex;
+  margin-left: 50px;
+}
+.contacts__phone svg {
+  margin: 0 5px;
+}
+.contacts__phone select {
+  border: none;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  position: relative;
+}
+.list li {
+  list-style: none;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+.list li:after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #44C697;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.list li:hover:after,
+.list li:focus:after {
+  width: 100%;
+}
+
+.header__line {
+  width: 100%;
+  padding: 0;
+  color: #44C697;
+  height: 1px;
+}
