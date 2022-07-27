@@ -5,10 +5,11 @@
 }
 
 body {
-   font-family: $fontFamily;
+   font-family: proximanova_black;
+   // font-family: $fontFamily;
    font-size: $root-font-size;
    color: $color4;
-   
+
 }
 
 
@@ -19,6 +20,8 @@ body {
    overflow: hidden;
    display: flex;
    flex-direction: column;
+   // justify-content: center;
+   // align-items: center;
 
    // &._loaded {}
 }

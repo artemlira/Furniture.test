@@ -1,0 +1,13 @@
+.slider {
+   background-image: url(../img/slider/01.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100vw;
+   min-height: rem(785px);
+   margin: 0 auto;
+
+   &__contant {
+      border: 1px solid red;
+      min-height: rem(785px);
+   }
+}
