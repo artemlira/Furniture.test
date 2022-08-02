@@ -53,49 +53,49 @@
                <li>
                   <select name="target" id="">
                      <option value="Дивани">Дивани</option>
-                     <option value="Дивани1">Дивани1</option>
-                     <option value="Дивани2">Дивани2</option>
-                     <option value="Дивани3">Дивани3</option>
+                     <option value="Дивани1">Дивани 1</option>
+                     <option value="Дивани2">Дивани 2</option>
+                     <option value="Дивани3">Дивани 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="ліжка">ліжка</option>
-                     <option value="ліжка1">ліжка1</option>
-                     <option value="ліжка2">ліжка2</option>
-                     <option value="ліжка3">ліжка3</option>
+                     <option value="ліжка1">ліжка 1</option>
+                     <option value="ліжка2">ліжка 2</option>
+                     <option value="ліжка3">ліжка 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="крісла">крісла</option>
-                     <option value="крісла1">крісла1</option>
-                     <option value="крісла2">крісла2</option>
-                     <option value="крісла3">крісла3</option>
+                     <option value="крісла1">крісла 1</option>
+                     <option value="крісла2">крісла 2</option>
+                     <option value="крісла3">крісла 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="комоди">комоди</option>
-                     <option value="комоди1">комоди1</option>
-                     <option value="комоди2">комоди2</option>
-                     <option value="комоди3">комоди3</option>
+                     <option value="комоди1">комоди 1</option>
+                     <option value="комоди2">комоди 2</option>
+                     <option value="комоди3">комоди 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="шафи">шафи</option>
-                     <option value="шафи1">шафи1</option>
-                     <option value="шафи2">шафи2</option>
-                     <option value="шафи3">шафи3</option>
+                     <option value="шафи1">шафи 1</option>
+                     <option value="шафи2">шафи 2</option>
+                     <option value="шафи3">шафи 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="кухня">кухня</option>
-                     <option value="кухня1">кухня1</option>
-                     <option value="кухня2">кухня2</option>
-                     <option value="кухня3">кухня3</option>
+                     <option value="кухня1">кухня 1</option>
+                     <option value="кухня2">кухня 2</option>
+                     <option value="кухня3">кухня 3</option>
                   </select>
                </li>
             </ul>
@@ -130,9 +130,11 @@
                </svg>
                <p>Кошик</p>
             </div>
-            <div class="basket__btn">
-               <p>Замовити дзвінок</p>
-            </div>
+            @@include('../html/_buttons.html', {
+            "text":"Замовити дзвінок",
+            "class":"btn",
+            "style":"style=width:210px;height:50px"
+            })
          </div>
       </div>
    </div>

@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
    <title>Главная</title>
 </head>
 
@@ -65,49 +66,49 @@
                <li>
                   <select name="target" id="">
                      <option value="Дивани">Дивани</option>
-                     <option value="Дивани1">Дивани1</option>
-                     <option value="Дивани2">Дивани2</option>
-                     <option value="Дивани3">Дивани3</option>
+                     <option value="Дивани1">Дивани 1</option>
+                     <option value="Дивани2">Дивани 2</option>
+                     <option value="Дивани3">Дивани 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="ліжка">ліжка</option>
-                     <option value="ліжка1">ліжка1</option>
-                     <option value="ліжка2">ліжка2</option>
-                     <option value="ліжка3">ліжка3</option>
+                     <option value="ліжка1">ліжка 1</option>
+                     <option value="ліжка2">ліжка 2</option>
+                     <option value="ліжка3">ліжка 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="крісла">крісла</option>
-                     <option value="крісла1">крісла1</option>
-                     <option value="крісла2">крісла2</option>
-                     <option value="крісла3">крісла3</option>
+                     <option value="крісла1">крісла 1</option>
+                     <option value="крісла2">крісла 2</option>
+                     <option value="крісла3">крісла 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="комоди">комоди</option>
-                     <option value="комоди1">комоди1</option>
-                     <option value="комоди2">комоди2</option>
-                     <option value="комоди3">комоди3</option>
+                     <option value="комоди1">комоди 1</option>
+                     <option value="комоди2">комоди 2</option>
+                     <option value="комоди3">комоди 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="шафи">шафи</option>
-                     <option value="шафи1">шафи1</option>
-                     <option value="шафи2">шафи2</option>
-                     <option value="шафи3">шафи3</option>
+                     <option value="шафи1">шафи 1</option>
+                     <option value="шафи2">шафи 2</option>
+                     <option value="шафи3">шафи 3</option>
                   </select>
                </li>
                <li>
                   <select name="target" id="">
                      <option value="кухня">кухня</option>
-                     <option value="кухня1">кухня1</option>
-                     <option value="кухня2">кухня2</option>
-                     <option value="кухня3">кухня3</option>
+                     <option value="кухня1">кухня 1</option>
+                     <option value="кухня2">кухня 2</option>
+                     <option value="кухня3">кухня 3</option>
                   </select>
                </li>
             </ul>
@@ -142,16 +143,97 @@
                </svg>
                <p>Кошик</p>
             </div>
-            <div class="basket__btn">
-               <p>Замовити дзвінок</p>
-            </div>
+            <div class=btn style=width:210px;height:50px>
+   <p>Замовити дзвінок</p>
+</div>
          </div>
       </div>
    </div>
 </header>
       <section class="slider">
+   <img class="image animate__animated" src="../img/slider/01.jpg" alt="">
+   <img class="image animate__animated hidden" src="../img/slider/02.jpg" alt="">
+   <img class="image animate__animated hidden" src="../img/slider/03.jpg" alt="">
+   <img class="image animate__animated hidden" src="../img/slider/04.jpg" alt="">
    <div class="slider__contant container">
-     
+      <div class="slider__gallery">
+         <ul class="slider__items">
+            <li class="slider__item animate__animated">
+               <h2>Новинка!</h2>
+               <h4>Ліжко Ornella</h4>
+               <p>Це новий рівень комфортного сну</p>
+            </li>
+            <li class="slider__item animate__animated hidden">
+               <h2>Новинка!</h2>
+               <h4>Кровать Feelee</h4>
+               <p>Сучасне лофт ліжко з підйомним механізмом</p>
+            </li>
+            <li class="slider__item animate__animated hidden">
+               <h2>Новинка!</h2>
+               <h4>Кровать Lincoln</h4>
+               <p>Двоспальне ліжко в м'якій оббивці</p>
+            </li>
+            <li class="slider__item animate__animated hidden">
+               <h2>ТОП продаж</h2>
+               <h4>Кровать Vegas</h4>
+               <p>Двоспальне ліжко в м'якій оббивці</p>
+            </li>
+         </ul>
+
+         <div class=btn style=width:210px;height:50px>
+   <p>Детальніше</p>
+</div>
+         <div class="serial__number">
+            <p><span class="first__number">01</span><span>/</span>04</p>
+            <div class="box">
+               <svg class="prev" width="30" height="30" viewBox="0 0 31 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M15.5 31C23.7843 31 30.5 24.2843 30.5 16C30.5 7.71573 23.7843 1 15.5 1C7.21573 1 0.5 7.71573 0.5 16C0.5 24.2843 7.21573 31 15.5 31Z"
+                     stroke="#1E2E36" />
+                  <path
+                     d="M11.6808 15.8695C11.6808 15.6592 11.7591 15.4488 11.9154 15.2884L16.8348 10.2408C17.1478 9.91973 17.6552 9.91973 17.968 10.2408C18.2808 10.5618 18.2808 11.0823 17.968 11.4034L13.615 15.8695L17.9678 20.3357C18.2806 20.6568 18.2806 21.1773 17.9678 21.4982C17.655 21.8194 17.1476 21.8194 16.8347 21.4982L11.9152 16.4507C11.759 16.2902 11.6808 16.0799 11.6808 15.8695Z"
+                     fill="#1E2E36" />
+               </svg>
+               <svg class="next" width="31" height="30" viewBox="0 0 31 30" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M15.5 30C23.7843 30 30.5 23.2843 30.5 15C30.5 6.71573 23.7843 0 15.5 0C7.21573 0 0.5 6.71573 0.5 15C0.5 23.2843 7.21573 30 15.5 30Z"
+                     fill="#1E2E36" />
+                  <path
+                     d="M19.383 14.8696C19.383 15.08 19.3064 15.2903 19.1534 15.4507L14.3386 20.4983C14.0324 20.8194 13.5358 20.8194 13.2296 20.4983C12.9235 20.1774 12.9235 19.6569 13.2296 19.3357L17.49 14.8696L13.2298 10.4034C12.9236 10.0823 12.9236 9.56188 13.2298 9.24094C13.5359 8.91969 14.0325 8.91969 14.3388 9.24094L19.1536 14.2884C19.3065 14.4489 19.383 14.6593 19.383 14.8696Z"
+                     fill="white" />
+               </svg>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+      <section class="benefits">
+   <h2 class="benefits__title">Наші переваги</h2>
+   <div class="benefits__items">
+      <div class="benefits__item card">
+         <h4 class="card__title">Меблі преміум класу</h4>
+         <p class="card__text">Далеко-далеко за словесными горами в стране гласных и согласных.</p>
+      </div>
+      <div class="benefits__item card">
+         <h4 class="card__title">Надійність</h4>
+         <p class="card__text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької
+            області та України</p>
+      </div>
+      <div class="benefits__item card">
+         <h4 class="card__title">Безкоштовна доставка</h4>
+         <p class="card__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+      </div>
+      <div class="benefits__item card">
+         <h4 class="card__title">Lorem, ipsum.
+         </h4>
+         <p class="card__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+      </div>
+      <div class="benefits__item card">
+         <h4 class="card__title">Lorem, ipsum.</h4>
+         <p class="card__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+      </div>
    </div>
 </section>
       <main class="page">
