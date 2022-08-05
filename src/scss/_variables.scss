@@ -24,3 +24,7 @@ $root-font-size: 16px;
 @function rem($size) {
    @return $size / $root-font-size * 1rem;
 }
+
+@function pr($size) {
+   @return $size/$maxWidthContainer*100%;
+}

@@ -5,8 +5,8 @@
 }
 
 body {
-   font-family: proximanova_black;
-   // font-family: $fontFamily;
+   font-family: "Proxima Nova";
+   font-weight: 700;
    font-size: $root-font-size;
    color: $color4;
 
@@ -48,6 +48,30 @@ body {
 
    }
 
+}
+
+.hidden {
+   display: none;
+}
+
+.title {
+   font-size: rem(48px);
+   line-height: rem(60px);
+   margin: 0 auto;
+   color: $color4;
+   position: relative;
+
+   &::after {
+      content: "";
+      display: block;
+      width: rem(20px);
+      height: rem(50px);
+      background-color: $color3;
+      position: absolute;
+      top: 5px;
+      left: -5px;
+      z-index: -1;
+   }
 }
 
 //основная сетка====================================================================

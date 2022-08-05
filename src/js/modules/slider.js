@@ -52,7 +52,7 @@ function prev(i) {
    });
    images.forEach(item => {
       item.classList.add('hidden');
-      item.classList.remove('animate__fadeInRight');
+      item.classList.remove('animate__backInRight');
       item.classList.remove('animate__backInLeft');
    });
 

@@ -1,49 +1,14 @@
 @font-face {
-  font-family: proximanova_black;
+  font-family: "Proxima Nova";
   font-display: swap;
-  src: url("../fonts/proximanova_black.woff2") format("woff2"), url("../fonts/proximanova_black.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+  src: url("../fonts/Proxima Nova Bold.woff2") format("woff2"), url("../fonts/Proxima Nova Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
 }
 @font-face {
-  font-family: proximanova_blackit;
+  font-family: "Proxima Nova";
   font-display: swap;
-  src: url("../fonts/proximanova_blackit.woff2") format("woff2"), url("../fonts/proximanova_blackit.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: proximanova_bold;
-  font-display: swap;
-  src: url("../fonts/proximanova_bold.woff2") format("woff2"), url("../fonts/proximanova_bold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: proximanova_boldit;
-  font-display: swap;
-  src: url("../fonts/proximanova_boldit.woff2") format("woff2"), url("../fonts/proximanova_boldit.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: proximanova_extrabold;
-  font-display: swap;
-  src: url("../fonts/proximanova_extrabold.woff2") format("woff2"), url("../fonts/proximanova_extrabold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: proximanova_light;
-  font-display: swap;
-  src: url("../fonts/proximanova_light.woff2") format("woff2"), url("../fonts/proximanova_light.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: proximanova_regular;
-  font-display: swap;
-  src: url("../fonts/proximanova_regular.woff2") format("woff2"), url("../fonts/proximanova_regular.woff") format("woff");
+  src: url("../fonts/Proxima Nova Regular.woff2") format("woff2"), url("../fonts/Proxima Nova Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -54,7 +19,8 @@
 }
 
 body {
-  font-family: proximanova_black;
+  font-family: "Proxima Nova";
+  font-weight: 700;
   font-size: 16px;
   color: #1E2E36;
 }
@@ -82,6 +48,29 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.125rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  margin: 0 auto;
+  color: #1E2E36;
+  position: relative;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 1.25rem;
+  height: 3.125rem;
+  background-color: #44C697;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  z-index: -1;
 }
 
 .container {
@@ -241,10 +230,6 @@ body {
   min-height: 49.0625rem;
 }
 
-.hidden {
-  display: none;
-}
-
 li {
   list-style: none;
 }
@@ -299,6 +284,70 @@ li {
   margin: 0 auto 50px;
 }
 
-body {
-  font-family: proximanova_black;
+.benefits {
+  margin-top: 6.25rem;
+  max-width: 113.625rem;
+  padding: 1.25rem 0.625rem;
+}
+
+.benefits__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.125rem;
+}
+
+.benefits__items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 586px));
+  grid-template-rows: minmax(150px, 350px);
+  gap: 1.875rem;
+  position: relative;
+  overflow: hidden;
+}
+.benefits__items svg {
+  position: absolute;
+  top: calc(50% - 15px);
+}
+.benefits__items .left {
+  position: absolute;
+  left: 10px;
+}
+.benefits__items .right {
+  right: 10px;
+}
+
+.benefits__item {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 30px;
+}
+.benefits__item:hover .card__text {
+  display: block;
+}
+.benefits__item .card__title {
+  display: inline-block !important;
+}
+.benefits__item .card__title::after {
+  width: 50%;
+  display: block;
+  height: 2px;
+  background-color: #44C697;
+  content: "";
+}
+.benefits__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.card__text {
+  margin-top: 18px;
 }
