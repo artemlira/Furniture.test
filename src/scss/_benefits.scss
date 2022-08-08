@@ -19,6 +19,7 @@
    position: relative;
    overflow: hidden;
 
+
    svg {
       position: absolute;
       top: calc(50% - 15px);
@@ -57,6 +58,8 @@
 
    .card__title {
       display: inline-block !important;
+      font-size: rem(36px);
+      font-weight: 700;
    }
 
    .card__title::after {
@@ -77,10 +80,8 @@
    }
 }
 
-.card {}
-
-.card__title {}
-
 .card__text {
    margin-top: 18px;
+   font-size: rem(18px);
+   font-weight: 400;
 }
