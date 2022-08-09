@@ -27,14 +27,15 @@
 
    svg {
       fill: $color4;
+      transition: all 0.5s;
    }
 }
 
 .list__item:hover {
    svg {
       fill: rgb(54, 156, 119);
-      position: relative;
-      top: -5px;
+      transform: translateY(-5px);
+      transition: all 0.5s;
    }
 
 }
@@ -42,6 +43,7 @@
 .list__item {
    position: relative;
    cursor: pointer;
+
 }
 
 .active {
@@ -92,14 +94,32 @@
    grid-template-rows: 5fr 1fr;
 
    span {
-      color: $stock;
+      // color: $stock;
    }
 
+   &:hover {
+
+      transform: translateY(-15px);
+      transition: all 0.8s;
+
+      .card__outer {
+         background-color: $color3;
+         color: #fff !important;
+      }
+
+   }
+
+}
+
+.name {
+   color: $color4;
 }
 
 .card__inner {
    position: relative;
    cursor: pointer;
+   display: flex;
+   flex-direction: column;
 }
 
 .card__outer {
@@ -107,6 +127,28 @@
    justify-content: space-between;
    align-items: center;
    padding: 0 rem(10px);
+}
+
+.inner__title {
+   margin-top: rem(10px);
+
+   & h4 {
+      display: inline-block;
+      color: #fff;
+      background-color: $color4;
+      padding: rem(5px) rem(15px);
+   }
+}
+
+.inner__text {
+   margin-top: rem(5px);
+
+   & p {
+      color: #fff;
+      background-color: $stock;
+      display: inline-block;
+      padding: rem(5px) rem(15px);
+   }
 }
 
 .inner__img {

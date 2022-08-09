@@ -1,7 +1,6 @@
 .benefits {
    margin-top: rem(100px);
    max-width: rem(1818px);
-   // min-height: rem(462px);
    padding: rem(20px) rem(10px);
 }
 
@@ -19,7 +18,6 @@
    position: relative;
    overflow: hidden;
 
-
    svg {
       position: absolute;
       top: calc(50% - 15px);
@@ -33,15 +31,15 @@
    .right {
       right: 10px;
    }
-
-
 }
 
-
+.card__wrapper {
+   transform: translateY(70px);
+   transition: all 0.8s;
+}
 
 .benefits__item {
    position: relative;
-   // min-height: rem(350px);
    color: #fff;
    overflow: hidden;
    cursor: pointer;
@@ -50,9 +48,10 @@
    justify-content: end;
    padding: 30px;
 
+
    &:hover {
-      .card__text {
-         display: block;
+      .card__wrapper {
+         transform: translateY(0px);
       }
    }
 
