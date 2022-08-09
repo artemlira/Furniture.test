@@ -121,7 +121,15 @@
    display: flex;
    align-items: center;
    gap: rem(15px);
+}
 
+.contacts__icons {
+   svg {
+      fill: $color4;
+   }
+}
+
+.logo__title {
    h2 {
       font-weight: 700;
       font-size: rem(36px);
@@ -143,4 +151,3 @@
       gap: rem(5px);
    }
 }
-

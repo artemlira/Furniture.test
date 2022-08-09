@@ -28,7 +28,7 @@
 
 .form__text {
    width: pr(1820, 528);
-   height: pr(675, 457);
+   // height: pr(675, 457);
    z-index: 10;
    border-left: 15px solid $color3;
    background-color: #fff;
@@ -69,4 +69,15 @@
 .text__button {
    display: flex;
    justify-content: center;
+   margin-bottom: rem(30px);
+}
+
+.text__text {
+   font-size: rem(18px);
+   line-height: 125%;
+   font-weight: 400;
+
+   span {
+      font-weight: 700;
+   }
 }

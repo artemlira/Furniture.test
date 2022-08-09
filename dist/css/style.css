@@ -192,11 +192,16 @@ body {
   align-items: center;
   gap: 0.9375rem;
 }
-.header__title-logo h2 {
+
+.contacts__icons svg {
+  fill: #1E2E36;
+}
+
+.logo__title h2 {
   font-weight: 700;
   font-size: 2.25rem;
 }
-.header__title-logo span {
+.logo__title span {
   color: #44C697;
 }
 
@@ -584,7 +589,6 @@ li {
 
 .form__text {
   width: 29.010989011%;
-  height: 67.7037037037%;
   z-index: 10;
   border-left: 15px solid #44C697;
   background-color: #fff;
@@ -623,4 +627,134 @@ li {
 .text__button {
   display: flex;
   justify-content: center;
+  margin-bottom: 1.875rem;
+}
+
+.text__text {
+  font-size: 1.125rem;
+  line-height: 125%;
+  font-weight: 400;
+}
+.text__text span {
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  margin-top: 6.875rem;
+}
+
+.footer__wrapper {
+  position: relative;
+  width: 100%;
+  height: 523px;
+  display: grid;
+  grid-template-columns: 1.6fr 2fr;
+}
+
+.btn__upstairs {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  background-color: #44C697;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer__info {
+  background-color: #1E2E36;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.footer__info .logo__title {
+  font-size: 2.25rem;
+  margin: 4.375rem 0 4.125rem 0;
+}
+
+.footer__logo {
+  margin-bottom: 3.125rem;
+}
+
+.footer__categories {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.8125rem;
+  padding: 0.625rem;
+}
+
+.categories__item,
+.footer__item {
+  list-style: none;
+  position: relative;
+  margin-bottom: 0.9375rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.categories__item::after,
+.footer__item::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #44C697;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+}
+.categories__item a,
+.footer__item a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.footer__item {
+  margin-left: 1.875rem;
+}
+
+.footer__contacts {
+  margin: 10.625rem 0 0 3.125rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.footer__contacts li {
+  margin-bottom: 0.9375rem;
+}
+.footer__contacts ul {
+  margin-bottom: 1.875rem;
+}
+
+.footer__icons {
+  margin-top: 0.625rem;
+}
+.footer__icons svg {
+  fill: #fff;
+  margin-right: 1.5625rem;
+}
+
+.footer__phone {
+  color: #44C697;
+  font-weight: 700;
+}
+.footer__phone span {
+  margin-left: 1.75rem;
+}
+
+.footer__img {
+  background-image: url(../img/footer/01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
