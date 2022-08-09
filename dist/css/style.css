@@ -501,28 +501,36 @@ li {
 }
 
 .about {
-  min-height: 49.0625rem;
+  height: 49.0625rem;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  margin: 0 auto;
+  padding-top: 0;
+  margin-top: 6.25rem;
 }
 
 .about__title {
   display: flex;
   justify-content: center;
-  margin-top: 6.25rem;
+}
+.about__title h2 {
+  margin-bottom: 3.125rem;
+  margin-top: 0;
 }
 
 .about__wrapper {
   display: flex;
   position: relative;
-  height: 675px;
-  width: 1920px;
+  max-width: 113.75rem;
+  align-items: center;
 }
 
 .about__text {
-  width: 41.1979166667%;
-  height: 60.5095541401%;
+  width: 43.4615384615%;
   z-index: 10;
   border-right: 15px solid #44C697;
   background-color: #fff;
+  padding: 1.25rem 1.875rem 1.25rem 3.125rem;
 }
 .about__text span {
   color: #44C697;
@@ -535,7 +543,7 @@ li {
 }
 
 .about__img {
-  width: 73.28125%;
+  width: 77.3076923077%;
   height: 100%;
   background-image: url(../img/about/01.png);
   background-repeat: no-repeat;
@@ -545,4 +553,74 @@ li {
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.form {
+  height: 49.0625rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  margin: 0 auto;
+  padding-top: 0;
+  margin-top: 6.25rem;
+}
+
+.form__title {
+  display: flex;
+  justify-content: center;
+}
+.form__title h2 {
+  margin-bottom: 3.125rem;
+  margin-top: 0;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.form__text {
+  width: 29.010989011%;
+  height: 67.7037037037%;
+  z-index: 10;
+  border-left: 15px solid #44C697;
+  background-color: #fff;
+  padding: 3.125rem 3.125rem 3.125rem 1.875rem;
+}
+
+.text__title {
+  font-size: 2.25rem;
+}
+
+.text__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  max-width: 27rem;
+  margin: 1.875rem 0 0.9375rem 0;
+}
+.text__input input {
+  width: 100%;
+  height: 3.125rem;
+}
+
+.form__img {
+  width: 85.7692307692%;
+  height: 100%;
+  background-image: url(../img/form/01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.text__button {
+  display: flex;
+  justify-content: center;
 }
