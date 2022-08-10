@@ -6,13 +6,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
    <title>Главная</title>
 </head>
+<style>
+   html {
+      scroll-behavior: smooth;
+   }
+</style>
 
 <body>
    <form class="wrapper" action="#">
       <header class="header" id="header">
-   <div class="header__content container">
+   <div class="header__content my-container">
       <div class="header__contacts">
          <div class="contacts">
             <div class="contacts__text">
@@ -46,67 +52,82 @@
                </select>
             </div>
          </div>
-         <div class="header__list">
-            <ul class="list">
-               <li>Головна</li>
-               <li>Акції</li>
-               <li>Доставка та оплата</li>
-               <li>Про нас</li>
-               <li>Контакти</li>
-            </ul>
-         </div>
+         <nav class="navbar">
+            <div class="container-fluid">
+             
+               <div class="navbar-collapse">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#header">Головна</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#stock">Акції</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#delivery">Доставка та оплата</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#about">Про нас</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Контакти</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
       </div>
       <hr class="header__line">
       <div class="header__title">
          <div class="header__title-list">
             <ul>
-               <li>
-                  <select name="target" id="">
-                     <option value="Дивани">Дивани</option>
-                     <option value="Дивани1">Дивани 1</option>
-                     <option value="Дивани2">Дивани 2</option>
-                     <option value="Дивани3">Дивани 3</option>
-                  </select>
+               <li class="header__item">
+                  <a href="#sofas">Дивани</a>
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M4.55806 7.55806C4.80214 7.31398 5.19786 7.31398 5.44194 7.55806L10 12.1161L14.5581 7.55806C14.8021 7.31398 15.1979 7.31398 15.4419 7.55806C15.686 7.80214 15.686 8.19786 15.4419 8.44194L10.4419 13.4419C10.1979 13.686 9.80214 13.686 9.55806 13.4419L4.55806 8.44194C4.31398 8.19786 4.31398 7.80214 4.55806 7.55806Z"
+      fill="#1E2E36" />
+</svg>
                </li>
-               <li>
-                  <select name="target" id="">
-                     <option value="ліжка">ліжка</option>
-                     <option value="ліжка1">ліжка 1</option>
-                     <option value="ліжка2">ліжка 2</option>
-                     <option value="ліжка3">ліжка 3</option>
-                  </select>
+               <li class="header__item">
+                  <a href="#beds">Ліжка</a>
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M4.55806 7.55806C4.80214 7.31398 5.19786 7.31398 5.44194 7.55806L10 12.1161L14.5581 7.55806C14.8021 7.31398 15.1979 7.31398 15.4419 7.55806C15.686 7.80214 15.686 8.19786 15.4419 8.44194L10.4419 13.4419C10.1979 13.686 9.80214 13.686 9.55806 13.4419L4.55806 8.44194C4.31398 8.19786 4.31398 7.80214 4.55806 7.55806Z"
+      fill="#1E2E36" />
+</svg>
                </li>
-               <li>
-                  <select name="target" id="">
-                     <option value="крісла">крісла</option>
-                     <option value="крісла1">крісла 1</option>
-                     <option value="крісла2">крісла 2</option>
-                     <option value="крісла3">крісла 3</option>
-                  </select>
+               <li class="header__item">
+                  <a href="#chairs">Крісла</a>
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M4.55806 7.55806C4.80214 7.31398 5.19786 7.31398 5.44194 7.55806L10 12.1161L14.5581 7.55806C14.8021 7.31398 15.1979 7.31398 15.4419 7.55806C15.686 7.80214 15.686 8.19786 15.4419 8.44194L10.4419 13.4419C10.1979 13.686 9.80214 13.686 9.55806 13.4419L4.55806 8.44194C4.31398 8.19786 4.31398 7.80214 4.55806 7.55806Z"
+      fill="#1E2E36" />
+</svg>
                </li>
-               <li>
-                  <select name="target" id="">
-                     <option value="комоди">комоди</option>
-                     <option value="комоди1">комоди 1</option>
-                     <option value="комоди2">комоди 2</option>
-                     <option value="комоди3">комоди 3</option>
-                  </select>
+               <li class="header__item">
+                  <a href="#goslings">комоди</a>
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M4.55806 7.55806C4.80214 7.31398 5.19786 7.31398 5.44194 7.55806L10 12.1161L14.5581 7.55806C14.8021 7.31398 15.1979 7.31398 15.4419 7.55806C15.686 7.80214 15.686 8.19786 15.4419 8.44194L10.4419 13.4419C10.1979 13.686 9.80214 13.686 9.55806 13.4419L4.55806 8.44194C4.31398 8.19786 4.31398 7.80214 4.55806 7.55806Z"
+      fill="#1E2E36" />
+</svg>
                </li>
-               <li>
-                  <select name="target" id="">
-                     <option value="шафи">шафи</option>
-                     <option value="шафи1">шафи 1</option>
-                     <option value="шафи2">шафи 2</option>
-                     <option value="шафи3">шафи 3</option>
-                  </select>
+               <li class="header__item">
+                  <a href="#cabinets">Шафи</a>
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M4.55806 7.55806C4.80214 7.31398 5.19786 7.31398 5.44194 7.55806L10 12.1161L14.5581 7.55806C14.8021 7.31398 15.1979 7.31398 15.4419 7.55806C15.686 7.80214 15.686 8.19786 15.4419 8.44194L10.4419 13.4419C10.1979 13.686 9.80214 13.686 9.55806 13.4419L4.55806 8.44194C4.31398 8.19786 4.31398 7.80214 4.55806 7.55806Z"
+      fill="#1E2E36" />
+</svg>
                </li>
-               <li>
-                  <select name="target" id="">
-                     <option value="кухня">кухня</option>
-                     <option value="кухня1">кухня 1</option>
-                     <option value="кухня2">кухня 2</option>
-                     <option value="кухня3">кухня 3</option>
-                  </select>
+               <li class="header__item">
+                  <a href="#kitchens">Кухні</a>
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M4.55806 7.55806C4.80214 7.31398 5.19786 7.31398 5.44194 7.55806L10 12.1161L14.5581 7.55806C14.8021 7.31398 15.1979 7.31398 15.4419 7.55806C15.686 7.80214 15.686 8.19786 15.4419 8.44194L10.4419 13.4419C10.1979 13.686 9.80214 13.686 9.55806 13.4419L4.55806 8.44194C4.31398 8.19786 4.31398 7.80214 4.55806 7.55806Z"
+      fill="#1E2E36" />
+</svg>
                </li>
             </ul>
          </div>
@@ -117,6 +138,9 @@
             <div class="logo__title">
    <h2> <span>F</span>urniture.test</h2>
 </div>
+         </div>
+         <div class="menu__icon">
+            <span></span>
          </div>
          <div class="header__title-basket">
             <div class="basket">
@@ -206,12 +230,12 @@
       </div>
    </div>
 </section>
-      <section class="benefits container">
+      <section class="benefits my-container">
    <div class="benefits__title">
       <h2 class="title">Наші переваги</h2>
    </div>
    <div class="benefits__items">
-      <div class="benefits__item animate__animated  ">
+      <div id=@@id class="benefits__item animate__animated  ">
    <img src="../img/benefits/01.png" alt="#">
    <div class="card__wrapper">
       <h4 class="card__title">Меблі преміум класу</h4>
@@ -219,7 +243,7 @@
    </div>
 </div>
 
-      <div class="benefits__item animate__animated  ">
+      <div id=@@id class="benefits__item animate__animated  ">
    <img src="../img/benefits/02.png" alt="#">
    <div class="card__wrapper">
       <h4 class="card__title">Надійність</h4>
@@ -227,7 +251,7 @@
    </div>
 </div>
 
-      <div class="benefits__item animate__animated  ">
+      <div id=delivery class="benefits__item animate__animated  ">
    <img src="../img/benefits/03.png" alt="#">
    <div class="card__wrapper">
       <h4 class="card__title">Безкоштовна доставка</h4>
@@ -254,7 +278,7 @@
 
    </div>
 </section>
-      <section class="categories container">
+      <section id="stock" class="categories my-container">
    <div class="categories__title">
       <h2 class="title">Категорії товарів</h2>
    </div>
@@ -633,7 +657,7 @@
 </div>
    </div>
 </section>
-      <section class="about container">
+      <section id="about" class="about my-container">
    <div class="about__title">
       <h2 class="title">Про нас</h2>
    </div>
@@ -667,7 +691,7 @@
       <div class="about__img"></div>
    </div>
 </section>
-      <section class="form container">
+      <section class="form my-container">
    <div class="form__title">
       <h2 class="title">Залишились питання?</h2>
    </div>
@@ -694,7 +718,7 @@
       <div class="form__img"></div>
    </div>
 </section>
-      <footer class="footer">
+      <footer id="contacts" class="footer">
    <div class="footer__wrapper">
       <div class="btn__upstairs">
          <a href="#header"><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
@@ -719,12 +743,12 @@
                   fill="white" />
             </svg>
             <ul class="catgories__list">
-               <li class="categories__item"><a href="#sofas">Дивани</a></li>
-               <li class="categories__item"><a href="#beds">Ліжка</a></li>
-               <li class="categories__item"><a href="#chairs">Крісла</a></li>
-               <li class="categories__item"><a href="#goslings">комоди</a></li>
-               <li class="categories__item"><a href="#cabinets">Шафи</a></li>
-               <li class="categories__item"><a href="#kitchens">Кухні</a></li>
+               <li class="footer__categories__item"><a href="#sofas">Дивани</a></li>
+               <li class="footer__categories__item"><a href="#beds">Ліжка</a></li>
+               <li class="footer__categories__item"><a href="#chairs">Крісла</a></li>
+               <li class="footer__categories__item"><a href="#goslings">комоди</a></li>
+               <li class="footer__categories__item"><a href="#cabinets">Шафи</a></li>
+               <li class="footer__categories__item"><a href="#kitchens">Кухні</a></li>
             </ul>
 
          </div>

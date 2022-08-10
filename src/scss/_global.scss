@@ -20,20 +20,15 @@ body {
    overflow: hidden;
    display: flex;
    flex-direction: column;
-   // justify-content: center;
-   // align-items: center;
-
-   // &._loaded {}
 }
 
 .btn {
-   // min-width: rem(280px);
-   // height: rem(50px);
    background-color: $color3;
    display: flex;
    align-items: center;
    justify-content: center;
    cursor: pointer;
+   border-radius: rem(3px);
 
 
    &:hover {
@@ -75,21 +70,51 @@ body {
 }
 
 //основная сетка====================================================================
-.container {
+.my-container {
    max-width: $maxWidthContainer + px;
    margin: 0 auto;
    padding: rem(20px) rem(10px);
 
-   @media (max-width: $md1) {
-      max-width: 970px;
-   }
+   // @media (max-width: $md1) {
+   //    max-width: 970px;
+   // }
 
-   @media (max-width: $md2) {
-      max-width: 750px;
-   }
+   // @media (max-width: $md2) {
+   //    max-width: 750px;
+   // }
 
-   @media (max-width: $md3) {
-      max-width: none;
-      padding: 0 10px;
+   // @media (max-width: $md3) {
+   //    max-width: none;
+   //    padding: 0 10px;
+   // }
+}
+
+
+@mixin notebook {
+   @media screen and (max-width:1260px) {
+      @content;
    }
 }
+
+@mixin notepad {
+   @media screen and (max-width:992px) {
+      @content;
+   }
+}
+
+@mixin tablet {
+   @media screen and (max-width:768px) {
+      @content;
+   }
+}
+
+@mixin phone {
+   @media screen and (max-width:480px) {
+      @content;
+   }
+}
+
+
+// @include tablet {
+//    max-width: $md3;
+// }

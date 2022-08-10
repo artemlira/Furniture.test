@@ -29,6 +29,12 @@
       fill: $color4;
       transition: all 0.5s;
    }
+
+   @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+   }
 }
 
 .list__item:hover {
@@ -92,10 +98,6 @@
    max-height: rem(360px);
    display: grid;
    grid-template-rows: 5fr 1fr;
-
-   span {
-      // color: $stock;
-   }
 
    &:hover {
 
