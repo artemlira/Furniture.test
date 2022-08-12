@@ -6,7 +6,6 @@ export function showMenu() {
    burgerMenu.addEventListener('click', (event) => {
       let target = event.target;
       if (target.closest('.menu__icon')) {
-         console.dir(target);
          burgerNav.classList.toggle('active');
          burgerIcon.classList.toggle('active');
       }

@@ -2,6 +2,10 @@
    margin-top: rem(100px);
    max-width: rem(1818px);
    padding: rem(20px) rem(10px);
+
+   @include tablet {
+      min-height: rem(450px);
+   }
 }
 
 .benefits__title {
@@ -83,4 +87,44 @@
    margin-top: 18px;
    font-size: rem(18px);
    font-weight: 400;
+}
+
+@include notepad {
+
+
+   .benefits__items div:nth-child(3) {
+      display: none;
+   }
+
+   .benefits__items {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@include tablet {
+
+   .benefits__items {
+      display: block;
+      // grid-template-columns: 1fr;
+      // justify-content: center;
+   }
+
+   .benefits__item {
+      position: relative;
+      display: block;
+      width: 90%;
+      min-height: rem(350px);
+      margin: 0 auto;
+
+      img {
+         display: block;
+         position: relative;
+         width: 100%;
+         height: auto;
+      }
+   }
+
+   .benefits__items div:nth-child(2) {
+      display: none;
+   }
 }

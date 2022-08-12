@@ -25,6 +25,8 @@
       text-transform: uppercase;
    }
 
+
+
    svg {
       fill: $color4;
       transition: all 0.5s;
@@ -34,6 +36,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
+
+      svg {
+         // display: block;
+      }
    }
 }
 
@@ -85,6 +91,16 @@
    row-gap: rem(50px);
    column-gap: rem(30px);
 
+   @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   }
+
+   @include phone {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+   }
+
 
    img {
       width: 100%;
@@ -98,6 +114,10 @@
    max-height: rem(360px);
    display: grid;
    grid-template-rows: 5fr 1fr;
+
+   @include tablet {
+      min-height: rem(280px);
+   }
 
    &:hover {
 
