@@ -192,7 +192,7 @@ body {
   height: 2.1875rem;
 }
 .menu__icon span {
-  top: 50%;
+  top: calc(50% - 1px);
 }
 .menu__icon::after, .menu__icon::before, .menu__icon span {
   display: block;
@@ -536,7 +536,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .benefits__items .left {
-    left: 12%;
+    left: 7%;
   }
 }
 .benefits__items .right {
@@ -544,7 +544,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .benefits__items .right {
-    right: 15%;
+    right: 7%;
   }
 }
 
@@ -562,6 +562,11 @@ li {
   flex-direction: column;
   justify-content: end;
   padding: 30px;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    padding: 0;
+  }
 }
 .benefits__item:hover .card__wrapper {
   transform: translateY(0px);
@@ -585,6 +590,11 @@ li {
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item img {
+    height: 100%;
+  }
 }
 
 .card__text {
@@ -631,7 +641,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .categories {
-    margin-top: 0;
+    margin-top: 0.625rem;
   }
 }
 
@@ -658,9 +668,20 @@ li {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .list__items h4 {
+    font-size: 1.125rem !important;
+  }
+}
 .list__items svg {
   fill: #1E2E36;
   transition: all 0.5s;
+}
+@media screen and (max-width: 480px) {
+  .list__items svg {
+    width: 60px;
+    height: 60px;
+  }
 }
 @media screen and (max-width: 768px) {
   .list__items {
@@ -959,6 +980,8 @@ li {
   margin: 1.875rem 0 0.9375rem 0;
 }
 .text__input input {
+  font-family: "Proxima Nova";
+  font-size: 1.25rem;
   width: 100%;
   height: 3.125rem;
 }

@@ -109,7 +109,7 @@
    height: rem(35px);
 
    span {
-      top: 50%;
+      top: calc(50% - 1px);
    }
 
    &::after,
