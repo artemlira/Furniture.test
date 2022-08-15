@@ -6,11 +6,18 @@
    margin: 0 auto;
    padding-top: 0;
    margin-top: rem(100px);
+   @include tablet {
+         margin-top: 0;
+      }
 }
 
 .form__title {
    display: flex;
    justify-content: center;
+
+   @include tablet {
+      padding: 0 rem(15px);
+   }
 
    h2 {
       margin-bottom: rem(50px);
@@ -24,6 +31,10 @@
    position: relative;
    width: pr(1920, 1920);
    align-items: center;
+
+   @include tablet {
+      justify-content: center;
+   }
 }
 
 .form__text {
@@ -34,10 +45,29 @@
    background-color: #fff;
    padding: rem(50px) rem(50px) rem(50px) rem(30px);
 
+   @include notebook {
+      width: pr(1260, 528);
+   }
+
+   @include notepad {
+      width: pr(992, 528);
+   }
+
+   @include tablet {
+      width: pr(768, 528);
+   }
+
+   @include phone {
+      width: 80%;
+
+   }
+
+
 }
 
 .text__title {
    font-size: rem(36px);
+   
 }
 
 .text__input {
@@ -53,6 +83,13 @@
    }
 }
 
+@include phone {
+   .btn {
+      width: 80% !important;
+      min-width: 142px;
+   }
+}
+
 .form__img {
    width: pr(1820, 1561);
    height: 100%;
@@ -64,6 +101,10 @@
    left: 0;
    bottom: 0;
    z-index: -1;
+
+   @include tablet {
+      width: 100%;
+   }
 }
 
 .text__button {

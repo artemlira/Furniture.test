@@ -163,6 +163,7 @@
    // transform: translateY(-120%);
    transform: translateX(100%);
    transition: all 0.8s;
+
 }
 
 .burger__menu.active {
@@ -240,7 +241,7 @@
       left: 0;
       right: 0;
       background-color: #fff;
-      z-index: 2;
+      z-index: 20;
    }
 
    .header__title-logo,

@@ -12,6 +12,12 @@ body {
 
 }
 
+@include tablet {
+   h4 {
+      font-size: rem(28px) !important;
+   }
+}
+
 
 //Оболочка=========================================================================
 .wrapper {
@@ -43,6 +49,9 @@ body {
       font-weight: bold;
       font-size: rem(18px);
 
+      @include tablet {
+         font-size: rem(14px);
+      }
    }
 
 }
@@ -57,6 +66,10 @@ body {
    margin: 0 auto;
    color: $color4;
    position: relative;
+
+   @include tablet {
+      font-size: rem(32px);
+   }
 
    &::after {
       content: "";
@@ -92,29 +105,7 @@ body {
 }
 
 
-@mixin notebook {
-   @media screen and (max-width:1260px) {
-      @content;
-   }
-}
 
-@mixin notepad {
-   @media screen and (max-width:992px) {
-      @content;
-   }
-}
-
-@mixin tablet {
-   @media screen and (max-width:768px) {
-      @content;
-   }
-}
-
-@mixin phone {
-   @media screen and (max-width:480px) {
-      @content;
-   }
-}
 
 
 // @include tablet {

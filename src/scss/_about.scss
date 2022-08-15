@@ -1,10 +1,15 @@
 .about {
-   height: rem(785px);
+   min-height: rem(785px);
+   height: auto;
    display: grid;
    grid-template-rows: 1fr 8fr;
    margin: 0 auto;
    padding-top: 0;
    margin-top: rem(100px);
+
+   @include tablet {
+      margin-top: 0;
+   }
 }
 
 .about__title {
@@ -22,14 +27,23 @@
    position: relative;
    max-width: rem(1820px);
    align-items: center;
+
+   @include notepad {
+      flex-direction: column-reverse;
+   }
+
 }
 
 .about__text {
    width: pr(1820, 791);
-   z-index: 10;
+   z-index: 2;
    border-right: 15px solid $color3;
    background-color: #fff;
    padding: rem(20px) rem(30px) rem(20px) rem(50px);
+
+   @include notepad {
+      width: 100%;
+   }
 
 
    span {
@@ -55,4 +69,8 @@
    right: 0;
    bottom: 0;
    z-index: -1;
+
+   @include notepad {
+      position: relative;
+   }
 }
