@@ -1,5 +1,6 @@
 .categories {
    min-height: rem(1208px);
+   height: auto;
    width: 100%;
    margin-top: rem(100px);
    display: flex;
@@ -12,6 +13,10 @@
 
 .categories__images {
    flex: 1 1 auto;
+
+   @include phone {
+      padding: 0 rem(15px);
+   }
 }
 
 .list__items {
@@ -36,6 +41,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      row-gap: rem(20px);
 
       svg {
          // display: block;
@@ -69,6 +75,11 @@
       height: 3px;
       background-color: $color3;
       content: "";
+
+      @include tablet {
+         width: 50%;
+         transform: translateX(50%);
+      }
    }
 }
 

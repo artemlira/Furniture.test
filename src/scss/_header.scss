@@ -180,7 +180,9 @@
 }
 
 .burger-link {
+   font-family: "Proxima Nova";
    font-size: rem(24px) !important;
+
 }
 
 @include notebook {
@@ -271,7 +273,6 @@
 .burger-item {
    a {
       text-transform: uppercase;
-      font-family: proximanova_bold;
       font-weight: 700;
       color: $color4;
       text-decoration: none;

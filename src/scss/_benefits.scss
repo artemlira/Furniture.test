@@ -30,10 +30,18 @@
    .left {
       position: absolute;
       left: 10px;
+
+      @include tablet {
+         left: 12%;
+      }
    }
 
    .right {
       right: 10px;
+
+      @include tablet {
+         right: 15%;
+      }
    }
 }
 
@@ -51,6 +59,7 @@
    flex-direction: column;
    justify-content: end;
    padding: 30px;
+
 
 
    &:hover {
@@ -119,7 +128,6 @@
       img {
          display: block;
          position: relative;
-         width: 100%;
          height: auto;
       }
    }
