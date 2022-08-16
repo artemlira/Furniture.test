@@ -8,6 +8,7 @@ let index = 0;
 function slider() {
    sliders.addEventListener('click', (event) => {
       let target = event.target;
+      console.dir(target);
       if (target.closest('.next')) {
          index++;
          if (index > 3) {
