@@ -1,5 +1,6 @@
 const wrapper = document.querySelector('.categories');
 const images = wrapper.querySelectorAll('.inner__img');
+const imagesWebp = wrapper.querySelectorAll('source');
 const items = wrapper.querySelectorAll('.list__item');
 const outerTitle = wrapper.querySelectorAll('.name');
 const price = wrapper.querySelectorAll('.outer__text');
@@ -31,7 +32,7 @@ const aboutItems = {
    },
    goslings: {
       price: "2 999 грн",
-      about: "комод"
+      about: "Комод"
    },
    cabinets: {
       price: "10 999 грн",
@@ -54,6 +55,12 @@ export function changeImage() {
             elem.classList.add('animate__flipInY');
             elem.attributes[1].value = `../img/categories/${target.parentElement.id}/0${index + 1}.png`;
          });
+
+         if (imagesWebp.length > 0) {
+            imagesWebp.forEach((elem, index) => {
+               elem.attributes[0].value = `../img/categories/${target.parentElement.id}/0${index + 1}.webp`;
+            });
+         }
 
          outerTitle.forEach(e => e.innerText = `${aboutItems[target.parentElement.id].about}`);
          price.forEach(e => e.innerText = `${aboutItems[target.parentElement.id].price}`);
